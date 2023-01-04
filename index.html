@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,32 +18,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-     <!--Icones-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--Icones-->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!--JavaScript-->
 
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    
+
 
     <div class="container">
 
         <div class="form">
-            <h3>Busque o clima de uma cidade:</h3>
-            <div class="form-input">
-                <input type="text" placeholder="Digite o nome da cidade" id="cidade-input">
-                <button id="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-        </div>
+            <h3 class="text">Busque o clima de qualquer cidade</h3>
+            <div class="form-input-container">
+              <input
+              type="text" class="placeholder"
+              placeholder="Digite o nome da cidade"
+              id="city-input"
+            />
+            <button id="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            </div>
+          </div>
+    
+        <div id="weather-data" class="hide">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+            </h2>
+            <p id="temperature">
+                <span class="grau"></span>&deg;C
+            </p>
+            <div id="description-container">
+                <p id="description"></p>
+                <img src="" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
 
+        </div> 
     </div>
 
 
+
+
 </body>
+
 </html>
