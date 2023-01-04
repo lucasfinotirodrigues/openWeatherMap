@@ -26,7 +26,7 @@ body{
     padding: 2rem;
     color: #fdfdfd;
     border-radius: 1rem;
-    max-width: 400px;
+    width: 400px;
   }
   
   /* Form */
@@ -129,5 +129,23 @@ body{
   @keyframes rotate {
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  /*Responsividade*/
+
+  @media screen  and (max-width:490px) {
+    .container{
+        width: 300px
+    }
+  }
+  @media screen  and (max-width:390px) {
+    .container{
+        width: 260px
+    }
+  }
+  @media screen  and (max-width:330px) {
+    .container{
+        width: 220px
     }
   }
