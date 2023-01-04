@@ -1,10 +1,6 @@
-//00e6ed7502c83f94639ee465f92a0204
-
-
-
 //Variáveis e seleções do elemento
 
-const apiKey = "00e6ed7502c83f94639ee465f92a0204";
+const apiKey = "";
 
 const cityInput = document.querySelector("#city-input");
 const searchBtn = document.querySelector("#search");
